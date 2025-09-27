@@ -1,0 +1,331 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qiadat School Miani</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+        crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+
+  <style>
+   /* Reset & global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+
+/* Hero Section */
+.hero-text {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  background: rgba(0,0,0,0.4); /* subtle overlay for readability */
+  border-radius: 8px;
+}
+
+/* Mission Section */
+.mission-heading {
+  max-width: 400px;
+  text-align: center;
+  margin: 40px auto 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.mission-paragraph {
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 0 15px;
+}
+
+/* Events Section */
+.events-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.events-section h1, 
+.events-section h2 {
+  margin-bottom: 15px;
+}
+
+.event-box {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 0.9rem;
+    width: 90%;
+  }
+
+  .mission-heading {
+    max-width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .mission-paragraph {
+    max-width: 90%;
+    font-size: 0.95rem;
+  }
+
+  .event-box {
+    max-width: 95%;
+  }
+}
+.whatsapp-float{
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 56px;
+  height: 56px;
+  background-color: #25D366; /* WhatsApp green */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  z-index: 9999;
+  text-decoration: none;
+  transition: transform .15s ease;
+}
+.whatsapp-float:hover { transform: translateY(-4px); }
+.whatsapp-float svg { display: block; }
+.facebook-float {
+  position: fixed;
+  right: 18px;
+  bottom: 80px; /* keep above WhatsApp button */
+  width: 56px;
+  height: 56px;
+  background-color: #1877F2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  z-index: 9999;
+  text-decoration: none;
+  transition: transform .15s ease;
+}
+.facebook-float:hover { transform: translateY(-4px); }
+.tiktok-float {
+  position: fixed;
+  right: 18px;
+  bottom: 145px; /* above Facebook & WhatsApp */
+  width: 56px;
+  height: 56px;
+  background-color: #000000; /* TikTok black */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  z-index: 9999;
+  text-decoration: none;
+  transition: transform .15s ease;
+}
+.tiktok-float:hover { transform: translateY(-4px); }
+.event-box {
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.event-box h2 {
+  margin-bottom: 15px;
+}
+
+.event-box ul {
+  padding-left: 20px;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.ef0AXJP1YH3aahyd3GBh3AHaHb?rs=1&pid=ImgDetMain&o=7&rm=3" 
+               alt="Logo" width="50" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <div class="hero-div position-relative">
+      <img src="https://static.vecteezy.com/system/resources/previews/028/633/788/non_2x/background-for-back-to-school-with-copy-space-free-photo.jpg" 
+           class="img-fluid w-100" 
+           alt="Hero Image">
+      <div class="hero-text">
+        <h1>Welcome to Qiadat School Miani</h1>
+        <p>We provide quality education for a brighter future.</p>
+      </div>
+    </div>
+
+    <!-- Mission Section -->
+    <div class="mission">
+      <h2 class="mission-heading">Our Mission</h2>
+      <p class="mission-paragraph">
+        At Qiadat Group of Schools, our mission is to empower students with knowledge, skills, and values that will enable them to thrive in a rapidly changing world. We are committed to fostering a nurturing and inclusive environment where every student can reach their full potential. To develop confident, compassionate, and capable leaders grounded in strong moral values and academic excellence. We strive to provide a holistic education that nurtures intellectual growth, character development, and a deep sense of social responsibility.
+      </p>
+    </div>
+<hr>
+    <!-- Events Section -->
+         <div class="events-section">
+      <h1>From Vision To Action</h1>
+      <h2>Qiadat School Events</h2>
+
+     <div class="event-box row align-items-center">
+  <div class="col-md-4">
+    <img src="https://png.pngtree.com/thumb_back/fw800/background/20240305/pngtree-ramzan-mubarak-background-with-green-decorated-image_15635697.jpg" alt="Islamic Event" class="img-fluid rounded">
+  </div>
+  <div class="col-md-8">
+    <h2>Islamic and Spiritual Events</h2>
+    <ul>
+      <li>Milad-un-Nabi (ﷺ) Celebrations</li>
+      <li>Eid Celebrations (Eid-ul-Fitr / Eid-ul-Adha)</li>
+      <li>Islamic Quiz Competitions</li>
+      <li>Quran Recitation (Tilawat) Competitions</li>
+      <li>Seerat-un-Nabi (ﷺ)</li>
+    </ul>
+  </div>
+</div>
+
+<div class="event-box row align-items-center">
+  <div class="col-md-4">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.RiUNfB1ob7n8TVZopnEyGAHaFj?w=626&h=470&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Academic Event" class="img-fluid rounded">
+  </div>
+  <div class="col-md-8">
+    <h2>Academic Events</h2>
+    <ul>
+      <li>Science Exhibitions</li>
+      <li>Annual Result Day / Prize Distribution</li>
+      <li>Parent-Teacher Meetings</li>
+      <li>Essay Writing Contests</li>
+      <li>Annual Exams & Midterms</li>
+    </ul>
+  </div>
+</div>
+
+<div class="event-box row align-items-center">
+  <div class="col-md-4">
+    <img src="https://th.bing.com/th/id/R.0aa116d65c975ca9738fd09ce459285c?rik=b04wDic%2fy9%2fnSQ&riu=http%3a%2f%2fwildcardexperience.com%2fwp-content%2fuploads%2f2015%2f03%2fEvents-social-hero.jpg&ehk=DVtcAqgL%2fR2hVh8WQt99MyZonjgql4brFQglOr%2bG3qI%3d&risl=&pid=ImgRaw&r=0" alt="Cultural Event" class="img-fluid rounded">
+  </div>
+  <div class="col-md-8">
+    <h2>Social Events</h2>
+    <ul>
+      <li>Independence Day Celebrations</li>
+      <li>Sports Day</li>
+      <li>Picnic or Educational Trip</li>
+      <li>Annual Day / School Festival</li>
+      <li>Cultural Day</li>
+    </ul>
+  </div>
+</div>
+     <!--events section ended-->
+
+
+<hr>
+    <!-- Motto Section -->
+    <div class="text-center my-5">
+      <h1 style="border: 2px solid black; display: inline-block; padding: 10px 20px; border-radius: 5px;">Our Motto</h1>
+      <p class="mt-3 px-3">
+        At Qiadat School, our motto is simple yet powerful: <b>"Leading with Knowledge, Living with Purpose."</b><br>
+        We believe that true leadership begins with a strong foundation in faith, character, and education. Our mission is to inspire students to become confident, responsible, and spiritually aware individuals who lead by example—both in their communities and beyond. Through a blend of Islamic principles and academic excellence, we aim to nurture minds, shape hearts, and build the leaders of tomorrow.
+      </p>
+    </div>
+    <div class="image-div">
+      <img src="https://scontent.flhe2-2.fna.fbcdn.net/v/t39.30808-6/491346088_1267697338697129_4350913413930044303_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=mnssQlnMx7IQ7kNvwEIzhNF&_nc_oc=Adnu7NGSHCabFCmAIptc7Q1GmxzK6PsWQhUoucSh_YooprknEktdxT0sz7fOGvvjtg4&_nc_zt=23&_nc_ht=scontent.flhe2-2.fna&_nc_gid=nxwR3zVPb4MsYlow5J0psw&oh=00_AfZpC3D_az9cfM3lrMet4HD_udKxL6RgLtcF05mGo-NdGQ&oe=68DCB5C2"class="img-fluid w-100">
+    </div>
+        <!-- Floating WhatsApp button --></p>
+  <a href="https://wa.me/+923436268766?text=Hello%20Qiadat%20School%21%20I%20have%20a%20question."
+   class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <!-- Inline SVG WhatsApp icon -->
+  <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+    <path fill="#ffffff" d="M20.52 3.48A11.86 11.86 0 0012 .25C5.94.25.98 5.2.98 11.27c0 1.98.52 3.91 1.5 5.6L0 24l7.45-2.44A11.99 11.99 0 0012 23.27c6.07 0 11.02-4.95 11.02-11.02 0-3-1.17-5.8-3.5-7.77zM12 21.27c-1.06 0-2.09-.22-3.03-.64l-.22-.1-4.43 1.45 1.29-3.79-.14-.28A8.04 8.04 0 014.01 11.27c0-4.42 3.6-8.02 8.02-8.02 2.14 0 4.15.84 5.66 2.36a7.97 7.97 0 012.36 5.66c0 4.42-3.6 8.02-8.02 8.02z"/>
+    <path fill="#ffffff" d="M18.2 14.2c-.3-.15-1.77-.88-2.05-.98-.28-.1-.48-.15-.69.15s-.79.98-.97 1.18c-.18.2-.36.22-.67.07-.31-.15-1.31-.48-2.49-1.52-.92-.82-1.54-1.83-1.72-2.14-.18-.32-.02-.49.14-.64.14-.14.31-.36.46-.53.15-.18.2-.31.3-.52.1-.21.05-.39-.02-.54-.07-.15-.69-1.66-.95-2.28-.25-.6-.51-.52-.69-.53-.18-.01-.39-.01-.6-.01-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.63 0 1.55 1.12 3.05 1.28 3.26.16.21 2.21 3.42 5.36 4.8 3.15 1.38 3.15.92 3.72.86.57-.06 1.77-.72 2.02-1.41.25-.69.25-1.28.18-1.41-.07-.13-.28-.21-.58-.37z"/>
+  </svg>
+</a>
+<a href="https://www.facebook.com/QiadatGroupOfSchools/" 
+   class="facebook-float" target="_blank" rel="noopener" 
+   aria-label="Visit our Facebook page">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
+    <path fill="#fff" d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.407.593 24 1.324 24H12.82v-9.293H9.692V11.08h3.128V8.41c0-3.1 1.894-4.787 4.66-4.787 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.507 0-1.798.716-1.798 1.767v2.307h3.59l-.467 3.627h-3.123V24h6.116C23.407 24 24 23.407 24 22.676V1.324C24 .593 23.407 0 22.676 0z"/>
+  </svg>
+</a>
+<a href="https://www.tiktok.com/@qiadat512" 
+   class="tiktok-float" target="_blank" rel="noopener" 
+   aria-label="Visit our TikTok page">
+  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48">
+    <path fill="#fff" d="M41 17.5c-3 0-5.6-1-7.6-2.7v13.6c0 7.9-6.4 14.4-14.4 14.4S4.6 36.3 4.6 28.4s6.4-14.4 14.4-14.4c1.1 0 2.2.1 3.2.4v7.3c-1-.3-2.1-.5-3.2-.5-4 0-7.2 3.2-7.2 7.2s3.2 7.2 7.2 7.2c4 0 7.2-3.2 7.2-7.2V2h7.2c0 3.1 1.3 5.9 3.4 7.9 2 2 4.8 3.2 7.8 3.2v7.4z"/>
+  </svg>
+</a>
+
+
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-light text-center py-3">
+    <!--links-->
+    <div id="contact-us" class="mb-2">
+      <h2>Quick Links</h2>
+      <a href="index.html" class="me-3">Home</a><br>
+      <a href="aboutus.html" class="me-3">About us</a><br>
+    </div>
+    <h2>Follow Us</h2>
+   <hr>
+    <p class="mb-0">&copy; 2025 Qiadat School Miani. All rights reserved.</p>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+          crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+/* Reset & global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero-text {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  background: rgba(0,0,0,0.4); /* subtle overlay for readability */
+  border-radius: 8px;
+}
+
+/* Mission Section */
+.mission-heading {
+  max-width: 400px;
+  text-align: center;
+  margin: 40px auto 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.mission-paragraph {
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 0 15px;
+}
+
+/* Events Section */
+.events-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.events-section h1, 
+.events-section h2 {
+  margin-bottom: 15px;
+}
+
+.event-box {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 0.9rem;
+    width: 90%;
+  }
+
+  .mission-heading {
+    max-width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .mission-paragraph {
+    max-width: 90%;
+    font-size: 0.95rem;
+  }
+
+  .event-box {
+    max-width: 95%;
+  }
+}
